@@ -1,5 +1,6 @@
 {
   "parser": "babel-eslint",
+  "root": true,
   "settings": {
     "ecmascript": 6,
     "jsx": true
@@ -11,6 +12,13 @@
     "node": true,
     "browser": true,
     "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "extends": "eslint:recommended",
   "rules": {
@@ -101,6 +109,9 @@
     "no-underscore-dangle": [
       2
     ],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
     "require-jsdoc": [
       2
     ],
